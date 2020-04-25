@@ -1,4 +1,4 @@
-# Covid - 19 Application
+# Covid - 19 Diagnosis Application
 
 A new Flutter project.
 
