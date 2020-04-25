@@ -1,6 +1,6 @@
 # Covid - 19 Diagnosis Application
 
-A new Flutter project.
+This is cross platform mobile application developed using flutter framework from google and utilizes dart programming language that asks a series of questions and determines the possibility of you having Covid-19.
 
 ## Logic Behind Calculation
 The application consists of 14 diagnostic questions and calculates a score based on a score weight for each particular symptom. For each question/symptom except the first two questions, there is a certain weight attached. The first two questions are risk adjusting factor questions.
