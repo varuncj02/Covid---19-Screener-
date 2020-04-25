@@ -1,4 +1,4 @@
-# prototypex1
+# Covid - 19 Application
 
 A new Flutter project.
 
