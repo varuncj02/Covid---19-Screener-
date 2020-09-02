@@ -5,7 +5,8 @@ class QuestionBank {
 
   List<Question> _questions = [
     Question('Are you older than 50 or younger than 5?'),
-    Question('Have you been diagnosed with any pre-existing chronic health conditions associated withoutcomes of COVID-19? (any respiratory disease, any heart disease, hypertension, diabetes, or any immunocompromised disease)'),
+    Question(
+        'Have you been diagnosed with any pre-existing chronic health conditions associated withoutcomes of COVID-19? (any respiratory disease, any heart disease, hypertension, diabetes, or any immunocompromised disease)'),
     Question('Fever above 37.8C/100Fin armpit or forehead'),
     Question('Dry cough'),
     Question('Fatigue (feeling extra tired)'),
@@ -20,13 +21,13 @@ class QuestionBank {
     Question('Headache or Dizziness'),
   ];
 
-  void questionIncrementer(){
-    if(questionNumber < _questions.length){
+  void questionIncrementer() {
+    if (questionNumber < _questions.length) {
       questionNumber++;
     }
   }
 
-  String getQuestion(){
+  String getQuestion() {
     return _questions[questionNumber].text;
   }
 
@@ -36,18 +37,14 @@ class QuestionBank {
 
   bool isFinished() {
     if (questionNumber >= _questions.length - 1) {
-
       print('Diagnosis Finished');
       return true;
-    } 
-    else {
+    } else {
       return false;
     }
   }
 
-  
   void reset() {
     questionNumber = 0;
   }
-
 }
